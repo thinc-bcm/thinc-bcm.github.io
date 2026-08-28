@@ -149,8 +149,7 @@ h2{font-size:26px;font-weight:600;letter-spacing:-.03em;margin-bottom:6px}
 .sw .ar{color:var(--acc);font-size:12px;opacity:0;transition:opacity .18s}
 .sw a:hover .ar{opacity:1}
 .sw p{color:var(--dim);font-size:13.5px;margin-top:6px}
-.sw .lang{margin-top:auto;padding-top:14px;font-size:11px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--dim)}
+.sw .pub{margin-top:auto;padding-top:14px;font-size:11.5px;color:var(--dim);line-height:1.4}
 
 /* ---------- team ---------- */
 .people{display:grid;gap:1px;background:var(--line);
