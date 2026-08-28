@@ -1,0 +1,204 @@
+/* ============================================================
+   Computational Biology at THINC — Baylor College of Medicine
+   Light + dark, one accent, everything else is typography.
+   ============================================================ */
+
+:root{
+  --bg:#faf9f7;
+  --bg-raised:#ffffff;
+  --ink:#12130f;
+  --ink-soft:#3c3d37;
+  --dim:#7c7d76;
+  --line:#e3e2dc;
+  --acc:#3b3bd6;
+  --acc-soft:#e9e9fb;
+  --acc-ink:#3535a8;
+  --neutral-pt:#c9c8c1;
+
+  /* research-area / cluster colours. Keys match `AREAS` in main.js. */
+  --c-rna-processing:#3b3bd6;
+  --c-drug-discovery:#0f9d8c;
+  --c-translational:#d4632a;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0e0f0c;
+    --bg-raised:#15170f;
+    --ink:#ecece5;
+    --ink-soft:#c3c4bb;
+    --dim:#868779;
+    --line:#242619;
+    --acc:#9a9aff;
+    --acc-soft:#1b1b38;
+    --acc-ink:#b6b6ff;
+    --neutral-pt:#3a3b33;
+
+    --c-rna-processing:#7b7bff;
+    --c-drug-discovery:#3fd4bd;
+    --c-translational:#f28f52;
+  }
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--acc);color:#fff;padding:10px 16px;z-index:99}
+.skip:focus{left:8px;top:8px}
+
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:2px}
+
+/* ---------- nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:40;
+  background:color-mix(in srgb, var(--bg) 84%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex;align-items:center;height:56px}
+nav .mark{font-weight:700;letter-spacing:-.03em;font-size:15px;color:var(--ink);text-decoration:none}
+nav .mark span{color:var(--acc)}
+nav a{margin-left:20px;color:var(--dim);text-decoration:none;font-size:13.5px;transition:color .18s}
+nav .mark{margin-left:0}
+nav a:not(.mark):first-of-type{margin-left:auto}
+nav a:hover{color:var(--ink)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:150px 0 66px;overflow:hidden}
+#cv{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero .wrap{position:relative;z-index:1;pointer-events:none}
+.hero a{pointer-events:auto}
+
+.eyebrow{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:22px}
+h1{font-size:clamp(34px,6.4vw,70px);font-weight:700;letter-spacing:-.045em;line-height:1.02}
+h1 .q{color:var(--acc)}
+.sub{margin-top:26px;max-width:48ch;font-size:17.5px;color:var(--ink-soft);line-height:1.55}
+.sub.narrow{margin-top:10px;max-width:52ch}
+.meta{margin-top:32px;font-size:13.5px;color:var(--dim);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.meta.spaced{gap:22px;margin-top:26px}
+.meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line);transition:.18s}
+.meta a:hover{border-color:var(--acc);color:var(--acc)}
+
+/* ---------- sections ---------- */
+section{padding:76px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:180px 1fr;gap:40px}
+.lbl{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding-top:7px}
+h2{font-size:26px;font-weight:600;letter-spacing:-.03em;margin-bottom:6px}
+.hint{color:var(--dim);font-size:14.5px;margin-bottom:22px}
+.hint a{color:var(--acc);text-decoration:none;border-bottom:1px solid transparent}
+.hint a:hover{border-color:var(--acc)}
+.note{margin-top:20px;font-size:13px;color:var(--dim)}
+.note code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;
+  background:var(--acc-soft);color:var(--acc-ink);padding:1px 6px;border-radius:3px}
+
+/* ---------- research areas ---------- */
+.areas{display:grid}
+.area{
+  padding:17px 0;border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:14px 1fr;gap:16px;align-items:start;
+  transition:padding .2s ease;
+}
+.area:last-child{border-bottom:0}
+.area .swatch{width:10px;height:10px;border-radius:50%;margin-top:8px;transition:transform .25s ease}
+.area h3{font-size:17px;font-weight:600;letter-spacing:-.02em;transition:color .2s}
+.area p{color:var(--dim);font-size:14.5px;margin-top:3px;max-width:62ch}
+.area:hover,.area.lit{padding-left:8px}
+.area:hover h3,.area.lit h3{color:var(--acc)}
+.area:hover .swatch,.area.lit .swatch{transform:scale(1.5)}
+
+/* ---------- papers ---------- */
+.papers{display:grid;border-top:1px solid var(--line)}
+.papers .loading{padding:20px 0;color:var(--dim);font-size:14px}
+.paper{padding:18px 0;border-bottom:1px solid var(--line)}
+.paper .t{font-size:16.5px;font-weight:600;letter-spacing:-.02em;line-height:1.38}
+.paper .t a{color:var(--ink);text-decoration:none;
+  border-bottom:1px solid transparent;transition:color .18s,border-color .18s}
+.paper .t a:hover{color:var(--acc);border-color:var(--acc)}
+.paper .au{font-size:13.2px;color:var(--dim);margin-top:6px;line-height:1.5}
+.paper .au strong{color:var(--ink-soft);font-weight:600}
+.paper .vn{font-size:12.5px;color:var(--dim);margin-top:7px;display:flex;gap:10px;
+  align-items:baseline;flex-wrap:wrap}
+.paper .vn .j{color:var(--acc);font-weight:500}
+.paper .vn .sep{opacity:.55}
+.paper .au sup.mk{color:var(--acc);font-weight:700;font-size:.8em;
+  vertical-align:super;line-height:0;margin-left:1px}
+.papers .legend{padding-top:14px;font-size:12.5px;color:var(--dim);
+  display:flex;gap:20px;flex-wrap:wrap}
+.papers .legend b{color:var(--acc);font-weight:700}
+
+/* ---------- software ---------- */
+.sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.sw a{background:var(--bg);padding:20px;text-decoration:none;color:inherit;transition:background .18s;
+  display:flex;flex-direction:column}
+.sw a:hover{background:var(--bg-raised)}
+.sw h3{font-size:16px;font-weight:600;letter-spacing:-.02em}
+.sw .ar{color:var(--acc);font-size:12px;opacity:0;transition:opacity .18s}
+.sw a:hover .ar{opacity:1}
+.sw p{color:var(--dim);font-size:13.5px;margin-top:6px}
+.sw .lang{margin-top:auto;padding-top:14px;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--dim)}
+
+/* ---------- team ---------- */
+.people{display:grid;gap:1px;background:var(--line);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.people .loading{background:var(--bg);padding:22px 0;color:var(--dim);font-size:14px}
+.pc{background:var(--bg);padding:22px 0;display:grid;grid-template-columns:1fr 1.6fr;gap:36px;
+  transition:background .2s}
+.pc:hover{background:var(--bg-raised)}
+.pc .who{display:flex;flex-direction:column;gap:2px}
+.pc .nm{font-size:19px;font-weight:600;letter-spacing:-.025em}
+.pc .rl{font-size:13px;color:var(--dim)}
+.pc .hd{font-size:12.5px;color:var(--acc);text-decoration:none;margin-top:6px}
+.pc .hd:hover{text-decoration:underline}
+.pc .bio{font-size:14.8px;color:var(--ink-soft);line-height:1.62}
+.pc .bio p + p{margin-top:.7em}
+.pc .bio a{color:var(--acc)}
+.pc .bio code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.pc .tg{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.pc .tg span{font-size:11.5px;background:var(--acc-soft);color:var(--acc-ink);
+  padding:2px 9px;border-radius:99px}
+
+/* ---------- footer ---------- */
+footer{padding:52px 0 44px;color:var(--dim);font-size:13px;border-top:1px solid var(--line)}
+footer .links{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:22px}
+footer .links a{color:var(--ink);font-size:15px;text-decoration:none;
+  border-bottom:1px solid var(--line);padding-bottom:2px;transition:.18s}
+footer .links a:hover{color:var(--acc);border-color:var(--acc)}
+footer .dimmer{margin-top:6px;opacity:.75}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:760px){
+  .wrap{padding:0 22px}
+  .hero{padding:118px 0 48px}
+  .grid{grid-template-columns:1fr;gap:18px}
+  .pc{grid-template-columns:1fr;gap:12px}
+  section{padding:58px 0}
+  nav a:not(.mark){font-size:12.5px;margin-left:14px}
+}
+
+/* four nav links plus the full wordmark stop fitting around here */
+@media (max-width:560px){
+  nav .mark span{display:none}
+  nav a:not(.mark){margin-left:12px}
+}

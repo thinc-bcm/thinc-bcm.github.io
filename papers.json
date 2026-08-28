@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Bio-primed machine learning to enhance discovery of relevant biomarkers",
+    "authors": ["Henke DM", "Renwick A", "Zoeller JR", "Meena JK", "Neill NJ", "Bowling EA", "Meerbrey KL", "Westbrook TF", "Simon LM"],
+    "venue": "npj Precision Oncology",
+    "year": 2025,
+    "doi": "10.1038/s41698-025-00825-9"
+  },
+  {
+    "title": "The HSP90-MYC-CDK9 network drives therapeutic resistance in mantle cell lymphoma",
+    "authors": ["Yan F", "Jiang V", "Jordan A", "Che Y", "Liu Y", "Cai Q", "Xue Y", "Li Y", "McIntosh J", "Chen Z", "Vargas J", "Nie L", "Yao Y", "Lee H", "Wang W", "Bigcal JR", "Badillo M", "Meena J", "Flowers C", "Zhou J", "Zhao Z", "Simon LM", "Wang M"],
+    "venue": "Experimental Hematology & Oncology",
+    "year": 2024,
+    "doi": "10.1186/s40164-024-00484-9",
+    "mark": "+"
+  },
+  {
+    "title": "Integration of millions of transcriptomes using batch-aware triplet neural networks",
+    "authors": ["Simon LM", "Wang Y", "Zhao Z"],
+    "venue": "Nature Machine Intelligence",
+    "year": 2021,
+    "doi": "10.1038/s42256-021-00361-8",
+    "mark": "†"
+  },
+  {
+    "title": "Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis",
+    "authors": ["Strunz M", "Simon LM", "Ansari M", "Kathiriya JJ", "Angelidis I", "Mayr CH", "Tsidiridis G", "Lange M", "Mattner LF", "Yee M", "Ogar P", "Sengupta A", "Kukhtevich I", "Schneider R", "Zhao Z", "Voss C", "Stoeger T", "Neumann JHL", "Hilgendorff A", "Behr J", "O'Reilly M", "Lehmann M", "Burgstaller G", "Königshoff M", "Chapman HA", "Theis FJ", "Schiller HB"],
+    "venue": "Nature Communications",
+    "year": 2020,
+    "doi": "10.1038/s41467-020-17358-3",
+    "mark": "*"
+  },
+  {
+    "title": "Single-cell RNA-seq denoising using a deep count autoencoder",
+    "authors": ["Eraslan G", "Simon LM", "Mircea M", "Mueller NS", "Theis FJ"],
+    "venue": "Nature Communications",
+    "year": 2019,
+    "doi": "10.1038/s41467-018-07931-2",
+    "mark": "*"
+  },
+  {
+    "title": "Integrative multi-omic analysis of human platelet eQTLs reveals alternative start site in mitofusin 2",
+    "authors": ["Simon LM", "Chen E", "Edelstein L", "Kong X", "Bhatlekar S", "Rigoutsos I", "Bray P", "Shaw C"],
+    "venue": "The American Journal of Human Genetics",
+    "year": 2016,
+    "doi": "10.1016/j.ajhg.2016.03.007"
+  }
+]
