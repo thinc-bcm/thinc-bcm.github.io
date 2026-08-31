@@ -7,6 +7,13 @@
     "doi": "10.1038/s41698-025-00825-9"
   },
   {
+    "title": "MYC induces oncogenic stress through RNA decay and ribonucleotide catabolism in breast cancer",
+    "authors": ["Meena JK", "Wang JH", "Neill NJ", "Keough D", "Putluri N", "Katsonis P", "Koire AM", "Lee H", "Bowling EA", "Tyagi S", "Orellana M", "Dominguez-Vidaña R", "Li H", "Eagle K", "Danan C", "Chung H", "Yang AD", "Wu W", "Kurley SJ", "Ho BM", "Zoeller JR", "Olson CM", "Meerbrey KL", "Lichtarge O", "Sreekumar A", "Dacso CC", "Guddat LW", "Rejman D", "Hocková D", "Janeba Z", "Simon LM", "Lin CY", "Pillon MC", "Westbrook TF"],
+    "venue": "Cancer Discovery",
+    "year": 2024,
+    "doi": "10.1158/2159-8290.CD-22-0649"
+  },
+  {
     "title": "The HSP90-MYC-CDK9 network drives therapeutic resistance in mantle cell lymphoma",
     "authors": ["Yan F", "Jiang V", "Jordan A", "Che Y", "Liu Y", "Cai Q", "Xue Y", "Li Y", "McIntosh J", "Chen Z", "Vargas J", "Nie L", "Yao Y", "Lee H", "Wang W", "Bigcal JR", "Badillo M", "Meena J", "Flowers C", "Zhou J", "Zhao Z", "Simon LM", "Wang M"],
     "venue": "Experimental Hematology & Oncology",
@@ -21,6 +28,13 @@
     "year": 2021,
     "doi": "10.1038/s42256-021-00361-8",
     "mark": "†"
+  },
+  {
+    "title": "Spliceosome-targeted therapies trigger an antiviral immune response in triple-negative breast cancer",
+    "authors": ["Bowling EA", "Wang JH", "Gong F", "Wu W", "Neill NJ", "Kim IS", "Tyagi S", "Orellana M", "Kurley SJ", "Dominguez-Vidaña R", "Chung H", "Hsu TY", "Dubrulle J", "Saltzman AB", "Li H", "Meena JK", "Canlas GM", "Chamakuri S", "Singh S", "Simon LM", "Olson CM", "Dobrolecki LE", "Lewis MT", "Zhang B", "Golding I", "Rosen JM", "Young DW", "Malovannaya A", "Stossi F", "Miles G", "Ellis MJ", "Yu L", "Buonamici S", "Lin CY", "Karlin KL", "Zhang XH", "Westbrook TF"],
+    "venue": "Cell",
+    "year": 2021,
+    "doi": "10.1016/j.cell.2020.12.031"
   },
   {
     "title": "Alveolar regeneration through a Krt8+ transitional stem cell state that persists in human lung fibrosis",
@@ -44,5 +58,12 @@
     "venue": "The American Journal of Human Genetics",
     "year": 2016,
     "doi": "10.1016/j.ajhg.2016.03.007"
+  },
+  {
+    "title": "The spliceosome is a therapeutic vulnerability in MYC-driven cancer",
+    "authors": ["Hsu TY", "Simon LM", "Neill NJ", "Marcotte R", "Sayad A", "Bland CS", "Echeverria GV", "Sun T", "Kurley SJ", "Tyagi S", "Karlin KL", "Dominguez-Vidaña R", "Hartman JD", "Renwick A", "Scorsone K", "Bernardi RJ", "Skinner SO", "Jain A", "Orellana M", "Lagisetti C", "Golding I", "Jung SY", "Neilson JR", "Zhang XH", "Cooper TA", "Webb TR", "Neel BG", "Shaw CA", "Westbrook TF"],
+    "venue": "Nature",
+    "year": 2015,
+    "doi": "10.1038/nature14985"
   }
 ]
