@@ -1,6 +1,6 @@
 ---
 name: Jordan Risdal
-role: PhD Student
+role: PhD Candidate
 github: jrisdal
 topics: rna-processing, drug-discovery
 ---
